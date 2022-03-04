@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/galetaire
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://id.galetaire.hns.to
+  * I am galetaire (https://keybase.io/galetaire) on keybase.
+  * I have a public key ASBLsye8bRXbJn1zmK6rNpipg2m_tB2zL7bmhwituEBucgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204bb327bc6d15db267d7398aeab3698a98369bfb41db32fb6e68708adb8406e720a",
+      "host": "keybase.io",
+      "kid": "01204bb327bc6d15db267d7398aeab3698a98369bfb41db32fb6e68708adb8406e720a",
+      "uid": "019adf76ef15e10654be2939a6571e19",
+      "username": "galetaire"
+    },
+    "merkle_root": {
+      "ctime": 1646414343,
+      "hash": "6aa5742406db06d339a52735c8799d70cb7af9a0dccbbcef28caacd0b85cbfda36640ad32bf7b552eae35f28d918a47c76cd34d47f87c745411ae5d2a1ade3aa",
+      "hash_meta": "4ddeb056e301641c5c897d5ee4ad805565da9a8a7949db73c8fc78ed2c4ac2da",
+      "seqno": 22006259
+    },
+    "service": {
+      "entropy": "nsBSSnZpa7aUSt7EhJ4OcNlM",
+      "hostname": "id.galetaire.hns.to",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1646414390,
+  "expire_in": 504576000,
+  "prev": "c224dbcbd8d804dcde6a50dab76a6c555a23edf108c7fa4da8717ebd5916a93e",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgS7MnvG0V2yZ9c5iuqzaYqYNpv7Qdsy+25ocIrbhAbnIKp3BheWxvYWTESpcCCMQgwiTby9jYBNzealDat2psVVoj7fEIx/pNqHF+vVkWqT7EIIOLS/r/l8RGVurOKOn1fZwMj6vaIsp9G9Az9/1CQHS6AgHCo3NpZ8RA68k9ol6uGD0a2sXr/iNEutLt9hErrtWnml5cqKOID5lzAMqLIgwDpMnAXmHicJjmzUNoO44aRWNiWYM0AvKOAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIL2Svcs9dF+CwasHxr14QP2GFv7Q45VBNiRgN8WG6IdQo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/galetaire
+
+==================================================================
