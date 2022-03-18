@@ -1,2 +1,3 @@
-# Sources
-A Mozilla original content. Explained over the course of [Mozilla: Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web).
+## Description and contact
+
+Basic ID website using my Handshake TLD (_.galetaire_). Handshake is a decentralized DNS naming protocol.
