@@ -1,13 +1,19 @@
 html {
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
-  color: #211f1f;
-  text-shadow: 1px 1px 1px white;
+  font-weight: normal;
+  font-family: "Sofia", sans-serif;
+  color: #000;
+  background-image: none;
+  background-color: #fff;
 }
 
 h1 {
   font-size: 60px;
   text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #ffbf00;
+  text-shadow: 3px 3px 1px #8bb8d7;
 }
 
 p, li {
@@ -16,22 +22,10 @@ p, li {
   letter-spacing: 1px;
 }
 
-html {
-  background-image: none;
-  background-color: #fff;
-}
-
 body {
   width: 800px;
   margin: 0 auto;
   padding: 0 20px 20px 20px;
-}
-
-h1 {
-  margin: 0;
-  padding: 20px 0;
-  color: #2d3032;
-  text-shadow: 3px 3px 1px #ffbf00;
 }
 
 img {
@@ -43,14 +37,14 @@ a:link {
   color: black;
   background-color: transparent;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #ffbf00;
+  text-shadow: 1px 1px 1px #8bb8d7;
 }
 
 a:visited {
   color: black;
   background-color: transparent;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #ffbf00;
+  text-shadow: 1px 1px 1px #8bb8d7;
 }
 
 footer {
