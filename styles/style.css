@@ -3,8 +3,8 @@ html {
   font-weight: normal;
   font-family: "Questrial", sans-serif;
   color: #000;
-  background-image: none;
-  background-color: #fff;
+  background: rgb(253,187,45);
+  background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,255,255,1) 8%); 
 }
 
 h1 {
