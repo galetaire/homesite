@@ -2,9 +2,8 @@ html {
   font-size: 18px;
   font-weight: normal;
   font-family: "Questrial", sans-serif;
-  color: #000;
-  background: rgb(255,255,255);
- background: linear-gradient(0deg, rgba(255,255,255,1) 90%, rgba(253,188,47,1) 100%);
+  color: white;
+  background: #4D4D4D
 }
 
 h1 {
@@ -12,12 +11,12 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: #303030;
-  text-shadow: 3px 3px 1px #ff9b00;
+  color: #F7931A;
+  text-shadow: 3px 3px 1px black;
 }
 
 p, li {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
 }
@@ -34,17 +33,17 @@ img {
 }
 
 a:link {
-  color: black;
+  color: #F7931A;
   background-color: transparent;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #ff9b00;
+  text-shadow: 1px 1px 1px black;
 }
 
 a:visited {
-  color: black;
+  color: #F7931A;
   background-color: transparent;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #ff9b00;
+  text-shadow: 1px 1px 1px black;
 }
 
 footer {
@@ -57,4 +56,13 @@ footer {
 
 .signature {
   word-break: break-all;
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: black;
+  background-color: #F7931A;
+  padding: 2px;
+  display: block;
+  font-size: 95%;
 }
