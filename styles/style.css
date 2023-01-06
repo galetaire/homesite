@@ -30,7 +30,8 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  border-radius: 50%;
+  background-color:#F7931A;
+  border-radius: 40%;
 }
 
 a:link {
