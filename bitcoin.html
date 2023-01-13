@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <title>Price in Bitcoin</title>
+</head>
+<body>
+<center>
+  <h1>House price in bitcoin</h1>
+</center>
+  <!-- Scripts with the charts-->
+<div id="chart-wrapper"><canvas id="bitcoin"></canvas></div>
+<script src="files/bitcoin.js"></script>
+<br>
+<!-- Footer-->
+<div id="footer">
+</div>
+<center>
+  <small style={{ display: 'block', marginTop: '8rem' }}>
+<script>document.write(new Date().getFullYear())</script> ©galetaire. Creative Commons Attribution-ShareAlike 4.0 International License.
+</small></center>
+</body>
+</html>
