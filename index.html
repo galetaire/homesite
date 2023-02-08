@@ -9,14 +9,17 @@
   <body>
     <h1>Hi, I'm Galetaire!</h1>
     <img src="images/galetaire2.png" alt="Galetaire" width="315">
-    <p>Welcome to my handshake ID, anything hosted under the domain <b>.galetaire</b> is owned by me, peer-to-peer, POW protected. On this page I share verified messages, as well as self-owned SLD addresses. Below is an index of current available content hosted under my ID.</p>
+    <p>Welcome to my handshake ID, anything hosted under the domain <b>.galetaire</b> is owned by me, peer-to-peer, POW protected. On this page I share verified messages and secondary addresses.</p>
     <ul> <!-- List of content -->
       <li><a href="https://galetaire/" target="_blank">galetaire/</a> → Top-level domain, personal blog</li>
       <li><a href="http://home.galetaire/" target="_blank">home.galetaire</a> → Home page, you are here! 👈</li>
+        <ul class="subset">
+        <li><a href="bitcoin.html">home.galetaire/bitcoin</a> → House price in bitcoin</li>
+        </ul>
       <li><a href="http://spain.galetaire/" target="_blank">spain.galetaire</a> → Spain housing observatory</li>
+      <li><a href="http://chart.galetaire/" target="_blank">chart.galetaire</a> → Dynamic charts using charts.js</li>
       <li><a href="http://map.galetaire/" target="_blank">map.galetaire</a> → Open Street Map viewer</li>
     </ul>
-    <button class="button button1" onclick="window.location='messages.html';">Read and verify messages</button>
     <p>Feel free to contact me through any of the following channels:</p>
     <table>
      <tr>
@@ -35,9 +38,12 @@
      <td>Discord</td>
      <td><a href="http://discord.com/" target="_blank">galetaire#2218</a></td>
      <td>Nostr</td>
-     <td><a href="nostrpubkey.html" target="_blank">PubKey</a> or <i>@spainhousing.xyz</i></td>
+     <td><a href="nostrpubkey.html" target="_blank">PubKey</a></td>
     </tr>
     </table>
+    <br>
+    <button class="button button1" onclick="window.location='messages.html';">Read and verify messages</button>
+    <br>
     <br>
     <footer>
     <script>document.write(new Date().getFullYear())</script> @Galetaire. Creative Commons Attribution-ShareAlike 4.0 International License.
