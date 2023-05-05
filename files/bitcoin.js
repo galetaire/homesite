@@ -48,7 +48,7 @@ const config = {
     },
     plugins: {
        customCanvasBackgroundColor: {
-       color: 'rgb(77, 77, 77, 1)',
+       color: 'rgb(255, 255, 255, 1)',
           }
         },
       scales: {
@@ -75,7 +75,7 @@ const config = {
               labelString: 'Bitcoins'
              },
             gridLines: {
-              color: 'rgb(77, 77, 77, 1)',
+              color: 'rgb(255, 255, 255, 1)',
             },
               ticks: {
                   fontSize: 8,
