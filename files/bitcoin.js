@@ -18,7 +18,7 @@ const data = {
     {
       label: 'House price',
       type: 'bar',
-      data: [2035102,42857,24770,1067,335,508,243,37,23,22,13,4,6,10],
+      data: [2035102,42857,24770,1067,335,508,243,37,23,22,13,4,6,8],
       backgroundColor: 'rgba(247, 147, 26, 1)',
       borderColor: 'rgba(9, 9, 9, 1)',
       borderWidth: 1,
