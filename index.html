@@ -1,32 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta title="Galetaire 🍪">
     <meta description="Personal site">
     <meta property="og:site_name" content="Hi, I'm Galetaire!"/>
     <meta property="og:description" content="Personal Site" />
     <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
     <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Hi, I'm Galetaire!</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Template</title>
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                color: #333;
+            }
+            .container {
+                display: flex;
+                max-width: 800px;
+                margin: ;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+            .container img {
+                max-width: 100%;
+                height: auto;
+                max-height: 300px;
+                margin-right: 20px;
+                border-radius: 4px;
+            }
+            .text-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .text-content h1 {
+                margin: 0 0 10px;
+            }
+            .text-content p {
+                margin: 0;
+            }
+            a:link {
+              color: black;
+              background-color: transparent;
+              text-decoration: none;
+            }
+
+            a:visited {
+              color: black;
+              background-color: transparent;
+              text-decoration: none;
+            }
+            footer {
+                margin-top: 20px;
+                font-size: 0.85rem;
+                color: #666;
+            }
+            @media (max-width: 600px) {
+                .container {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+                .container img {
+                    margin: 0 0 20px;
+                }
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images\galetaire1.png" width="200px" height="200px" alt="Placeholder Image">
+        <div class="text-content">
+            <h1>Hi, I'm Galetaire!</h1>
+            <p>Read and reach me on Nostr 🕳🐇, my public key is: <code class="signature">npub10eheqxxs4dp3ka0jcmqj80lveadslxznvqmuucdre5pctf4mhnjsmhpuxm</code></p>
+        </div>
+    </div>
     <!--<img src="images/galetaire2.png" alt="Galetaire" width="315">-->
     <ul> <!-- List of content -->
-      <li><a href="http://hi.galetaire/" target="_blank">hi.galetaire</a> → <span style="color: deeppink"><i>You are here</i></span> 🗺️!</li>
-      <li><a href="https://market.galetaire/" target="_blank">market.galetaire</a> → Financial markets macroview</li>
+      <li><a href="http://hi.galetaire/" target="_blank">hi.galetaire</a> → <span style="color: darkorange"><b>You are here</b></span> 🗺️!</li>
+      <li><a href="http://market.galetaire/" target="_blank">market.galetaire</a> → Financial markets macroview</li>
       <li><a href="http://spain.galetaire/" target="_blank">spain.galetaire</a> → Spain housing observatory</li>
-      <li><a href="http://chart.galetaire/" target="_blank">chart.galetaire</a> → Dynamic charts using charts.js</li>
       <li><a href="http://map.galetaire/" target="_blank">map.galetaire</a> → Open Street Map viewer</li>
       <li><a href="http://doisdomains.galetaire/" target="_blank">doisdomains.galetaire</a> → Meme handshake domains</li>
       <li><a href="http://silkroad.galetaire/" target="_blank">silkroad.galetaire</a> → Silk Road 1.0 marketplace tribute</li>
     </ul>
-    <h2>Verified messages on Nostr 🕳🐇</h2>
-    <p>Read and reach me on Nostr, my public key is: <code class="signature">npub10eheqxxs4dp3ka0jcmqj80lveadslxznvqmuucdre5pctf4mhnjsmhpuxm</code></p>
-    <footer>
-    <br>
-    Anything hosted under the domain <a href="https://niami/domain/galetaire" target="_blank">.galetaire</a> is owned by me. Secured by <a href="https://handshake.org/" target="blank"> Handshake</a>.
-    </footer>
-  </body>
+<footer>
+  Anything hosted under the domain <a href="https://niami/domain/galetaire" target="_blank">.galetaire</a> is controlled by me. Secured by <a href="https://handshake.org/" target="blank"> Handshake</a>.
+</footer>
+</body>
 </html>
