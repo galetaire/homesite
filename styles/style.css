@@ -1,126 +1,177 @@
-/* ========== Global ========== */
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 17px;
+  line-height: 27px;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;   /* use min-height so it can grow on long pages */
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  font-family: 'Roboto', sans-serif;
   color: #333;
 }
 
-/* ========== Generic wrappers ========== */
-.container,
-.container2 {
-  display: flex;
-  flex-wrap: wrap;           /* allow wrapping on medium widths */
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;            /* center horizontally */
-  padding: 20px;
+h1 {
+  font-size: 38px;
+  font-weight: 800;
 }
 
-.container {
-  border: 4px solid #ccc;
-  border-radius: 1px;
+h2 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.container2 {                /* “plain” version */
-  border: none;
-  padding: 0;
-  border-radius: 0;
-}
-
-/* ========== Image ========== */
-.container img {
-  width: 100%;               /* keep it fluid; max-height will cap it */
-  height: auto;
-  margin-right: 20px;
-  border-radius: 4px;
-  flex: 1 1 10px;           /* let it shrink but keep reasonable width */
-}
-
-/* ========== Text ========== */
-.text-content {
-  flex: 1 1 350px;           /* take remaining space but can wrap */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text-content h1 {
-  margin: 0 0 10px;
-}
-
-.text-content p {
-  margin: 0;
-}
-
-/* ========== Links & Footer ========== */
 a:link,
 a:visited {
-  color: #000;
+  color: #007bff;
+}
+
+#title {
+  text-align: left;
+  padding: 30px 0;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: #333;
+}
+
+#legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0 10px 10px;
+  font-size: 12px;
+}
+
+#legend .item {
+  line-height: 12px;
+  padding: 0 10px 0 4px;
+}
+
+#legend .item.male {
+  border-left: 12px solid #19A0AA;
+}
+
+#legend .item.female {
+  border-left: 12px solid #F15F36;
+}
+
+#chart-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #aaa;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  word-wrap: break-word;
+  margin: 20px 0;
+  font-size: 15px;
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 5px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: #f9f9f9;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td a {
+  color: #007bff;
   text-decoration: none;
 }
 
-footer {
-  margin-top: 20px;
-  font-size: 0.85rem;
-  color: #666;
+td a:hover {
+  text-decoration: underline;
 }
 
-/* ========== Responsive tweaks ========== */
+/* Navbar */
+.navbar {
+  padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-/* Small tablets / large phones */
+.navbar button {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  padding: 10px 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .container,
-  .container2 {
-    padding: 16px;
+  html {
+    font-size: 15px;
   }
 
-  .container img {
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0 0 16px;
-  }
-}
-
-/* Phones */
-@media (max-width: 480px) {
   body {
-    padding: 0 9px;                 /* small side gutters */
+    width: 100%;
+    padding: 10px;
   }
 
-  .container,
-  .container2 {
-    flex-direction: column;         /* stack image over text  */
-    padding: 0;                     /* already had 0, just for clarity */
+  h1 {
+    font-size: 34px;
+    line-height: 1.1;
   }
 
-  /* --- key change: stop items from stretching --- */
-  .container img,
-  .text-content {
-    flex: 0 0 auto;                 /* no grow, no shrink, auto height */
+  h2 {
+    font-size: 20px;
   }
 
-  .container img {
-    margin: 0 0 12px;               /* positive margin is enough */
-    max-width: 100%;              /* optional, tweak to taste */
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;       /* allows wrapping if needed on smaller screens */
+    justify-content: flex-start;
   }
 
-  .text-content h1 {
-    font-size: 1.4rem;
+  .navbar button {
+    font-size: 14.5px;        /* a little larger for readability */
+    padding: 0px 8px;
+    width: auto;            /* don’t force full width */
   }
-}
 
-code.signature {
-  white-space: normal;      /* let the line-wrap algorithm run */
-  overflow-wrap: anywhere;  /* modern keyword—break at any character */
-  word-break: break-all;    /* fallback for older browsers */
+  table {
+    font-size: 14px;
+  }
+
+  #title {
+    font-size: 24px;
+  }
 }
