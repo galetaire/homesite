@@ -135,6 +135,11 @@ td a:hover {
   background-color: #e6e6e6;
 }
 
+.signature {
+  word-break: break-all;
+  white-space: normal;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   html {
