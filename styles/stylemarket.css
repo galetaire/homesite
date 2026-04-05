@@ -1,0 +1,121 @@
+html {
+  background: #f9eee3;
+  font-size: 14px;
+  line-height: 20px;
+}
+body {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2.subtitle {
+  font-size: 1.5em; /* Adjust the size as needed */
+  color: gray;     /* Optional: Change the color */
+  margin-top: 0;   /* Optional: Adjust the spacing */
+}
+
+#title {
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  padding: 30px;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  color: #333;
+}
+
+#legend {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px 10px;
+  font-size: 12px;
+}
+
+#legend .item {
+  line-height: 12px;
+  padding: 0 10px 0 4px;
+}
+
+#legend .item.male {
+  border-left: 12px solid #19A0AA;
+}
+
+#legend .item.female {
+  border-left: 12px solid #F15F36;
+}
+
+#chart-wrapper {
+  height:;
+  width:;
+}
+
+
+#footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+#footer a {
+  color: #aaa;
+}
+
+a {
+  color: black; /* Change this to your desired link color */
+  text-decoration: none; /* Optional: removes underline */
+}
+
+a:hover {
+  color: SaddleBrown; /* Color when hovering over the link */
+  text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+.spoiler-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.spoiler-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white ;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.spoiler-button:focus {
+    outline: none;
+}
+
+        .two-column-container {
+            /* 1. Set the display to flex */
+            display: flex;
+            /* 2. Ensure columns fill the available width */
+            width: 100%;
+            /* 3. Add some space around the container */
+            padding: 20px;
+            gap: 20px; /* Space between the columns */
+        }
+
+        /* The columns define how the content inside the container behaves */
+        .column {
+            /* flex: 1 means both columns will take up equal space (50% each) */
+            flex: 1;
+            /* Optional: Add a border or background to visualize the columns */
+            padding: 15px;
+            border: 0px solid #ccc;
+        }
+
+        /* Optional: Basic styling for readability */
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
