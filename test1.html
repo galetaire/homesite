@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
       <meta charset="UTF-8">
+      <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta title="🍪 Galetaire">
       <meta description="Personal site">
@@ -23,6 +24,7 @@
   <button onclick="window.location.href='test1.html'">Test Slot 1 🥑</button>
   <button onclick="window.location.href='test2.html'">Test Slot 2 🍉</button>
   <button onclick="window.location.href='test3.html'">Test Slot 3 🍌</button>
+  <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
 </div>
 <br>
   <p>Booh!</p>
@@ -30,6 +32,7 @@
 <div id="footer">
   <script>document.write(new Date().getFullYear())</script> 🄯Galetaire. You can fork this site on <a href="https://github.com/galetaire/homesite" target="_blank">github</a>🐈.
 </div>
+<script src="theme.js" defer></script>
 <br>
 </body>
 </html>
