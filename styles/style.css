@@ -206,18 +206,6 @@ body.wide {
   max-width: 920px;
 }
 
-.page-header {
-  text-align: center;
-  padding: 12px 0 28px;
-}
-
-.page-header h1 {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0;
-}
-
 .page-subtitle {
   display: block;
   margin-top: 10px;

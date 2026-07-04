@@ -4,16 +4,32 @@
   <meta charset="UTF-8">
   <script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta title="🍪 Galetaire">
+  <meta description="Personal site">
+  <meta name="lightning" content="lnurlp:galetaire@getalby.com"/>
+  <meta property="og:site_name" content="Hi, I'm Galetaire!"/>
+  <meta property="og:description" content="Personal Site" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/galetaire/galetaireID/refs/heads/main/public/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
   <link href="styles/style.css" rel="stylesheet" type="text/css">
   <title>🧭 Brúixola dels mercats</title>
 </head>
 <body class="wide">
-<div class="page-header">
-  <h1>🧭 Brúixola dels mercats</h1>
-  <small class="page-subtitle">Darrera actualització: desembre 2025. Llista amb les <a href="fonts.html">fonts</a>.</small>
+<br>
+<br>
+<h1>🧭 Brúixola dels mercats</h1>
+<div class="navbar">
+  <button onclick="window.location.href='index.html'">About me 🧔🏻</button>
+  <button onclick="window.location.href='test1.html'">Test Slot 1 🥑</button>
+  <button onclick="window.location.href='test2.html'">Test Slot 2 🍉</button>
+  <button onclick="window.location.href='test3.html'">Test Slot 3 🍌</button>
+  <button onclick="window.location.href='market.html'">Markets 🍿</button>
+  <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
 </div>
+<small class="page-subtitle">Darrera actualització: desembre 2025. Llista amb les <a href="fonts.html">fonts</a>.</small>
 <hr>
 <div class="index">
     <ul>
@@ -179,6 +195,10 @@
         </div>
 </div>
 <hr> <!-- Horizontal black line -->
+<div id="footer">
+  <script>document.write(new Date().getFullYear())</script> 🄯Galetaire. You can fork this site on <a href="https://github.com/galetaire/homesite" target="_blank">github</a>🐈.
+</div>
 <script src="theme.js" defer></script>
+<br>
 </body>
 </html>
