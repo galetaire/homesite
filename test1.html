@@ -12,6 +12,8 @@
       <meta property="og:image" content="https://raw.githubusercontent.com/galetaire/galetaireID/refs/heads/main/public/favicon.ico">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
       <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://d3js.org/d3.v6.min.js"></script>
       <link href="styles/style.css" rel="stylesheet" type="text/css">
       <title>🍪 Galetaire</title>
 </head>
@@ -28,7 +30,76 @@
   <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
 </div>
 <br>
-  <p>Booh!</p>
+<canvas id="ipvvr" width="800" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+<script>
+function makeChart(ipvvr) {
+  // Register the plugin
+  Chart.register(ChartDataLabels);
+  var rangeStart = 99;
+  var rangeEnd = new Date().getFullYear() - 1899;
+  var rangeLabels = ipvvr.map(function(d) { return d.Year }).slice(rangeStart, rangeEnd);
+  var rangeOne = ipvvr.map(function(d) { return d.Saldo_vivo / d.GDP_spain }).slice(rangeStart, rangeEnd);
+  Chart.defaults.font.size = 12;
+  var chart = new Chart('ipvvr', {
+    type: 'line',
+    data: {
+      labels: rangeLabels,
+      datasets: [
+        {
+          label: "Saldo vivo hipotecario sobre PIB",
+          data: rangeOne,
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          borderColor: 'rgb(166, 17, 17, 1)',
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointBorderColor: 'black',
+          pointRadius: 11,
+          fill: false,
+          tension: 0.4
+        }
+      ]
+    },
+    options: {
+      scales: {
+        x: {
+          ticks: {
+            maxRotation: 90,
+            minRotation: 90
+          }
+        }
+      },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: (ctx) => {
+              const label = ctx.dataset.label || '';
+              const value = ctx.parsed.y;
+              return `${label}: ${value != null ? value.toFixed(2) : '—'}`;
+            }
+          }
+        },
+        datalabels: {
+          align: 'center',
+          anchor: 'center',
+          color: 'white',
+          font: {
+            size: 10
+          },
+          formatter: function(value, context) {
+            return value.toFixed(2);
+          }
+        }
+      }
+    }
+  });
+}
+
+// Request data from .csv file using D3js library
+d3.csv('https://raw.githubusercontent.com/galetaire/spahousing/main/public/docs/spain_stats_csv.csv')
+  .then(makeChart);
+</script>
 <!-- Footer-->
 <div id="footer">
   <script>document.write(new Date().getFullYear())</script> 🄯Galetaire. You can fork this site on <a href="https://github.com/galetaire/homesite" target="_blank">github</a>🐈.
